@@ -82,6 +82,9 @@ then
 	auto wlan0
 	iface lo inet loopback
 
+	auto eth0
+	iface eth0 inet dhcp
+
 	allow-hotplug ap0
 	iface ap0 inet static
 	    address ${IP}
